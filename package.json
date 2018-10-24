@@ -11,7 +11,10 @@
     "start": "react-scripts-ts start",
     "build": "react-scripts-ts build",
     "test": "react-scripts-ts test --env=jsdom",
-    "eject": "react-scripts-ts eject"
+    "eject": "react-scripts-ts eject",
+    "lint": "npx tslint -p tsconfig.json --fix",
+    "pretty": "npx prettier \"*/**/*.ts*\"  --config .prettierrc --write",
+    "assets": "node scripts/process-images"
   },
   "devDependencies": {
     "@types/jest": "^23.3.7",
